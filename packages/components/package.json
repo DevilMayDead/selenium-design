@@ -1,0 +1,38 @@
+{
+  "name": "@selenium-design/components",
+  "version": "0.0.1-beta.1",
+  "description": "@selenium-design/components",
+  "keywords": [
+    "selenium",
+    "selenium-design"
+  ],
+  "license": "MIT",
+  "sideEffects": false,
+  "module": "es/index.js",
+  "main": "lib/index.js",
+  "types": "es/index.d.ts",
+  "files": [
+    "es",
+    "dist",
+    "lib"
+  ],
+  "scripts": {
+    "build": "father build"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "Firefox ESR",
+    "> 1%",
+    "ie >= 11"
+  ],
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "authors": [
+    "zg <965752122@qq.com> (https://github.com/DevilMayDead)"
+  ]
+}

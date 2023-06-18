@@ -1,0 +1,37 @@
+{
+    "compilerOptions": {
+      "baseUrl": "./",
+      "target": "esnext",
+      "moduleResolution": "node",
+      "jsx": "react-jsx",
+      "esModuleInterop": true,
+      "experimentalDecorators": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "noImplicitReturns": true,
+      "suppressImplicitAnyIndexErrors": true,
+      "declaration": true,
+      "skipLibCheck": true,
+      "resolveJsonModule": true,
+      "paths": {
+        "@@/*": [".dumi/tmp/*"],
+        "@selenium-design/components": ["./packages/components/src/index.tsx"]
+      }
+    },
+    "include": [
+      "./tests/setupTests.ts",
+      ".dumi/**/*",
+      "jest.config.ts",
+      ".dumirc.ts",
+      "typings.d.ts",
+      "**/src/**/*",
+      "**/docs/**/*",
+      "scripts/**/*",
+      "**/demos",
+      ".eslintrc.js",
+      "tests",
+      "jest.config.ts",
+      "**/fixtures",
+      "./tests/no-duplicated.ts",
+    ]
+  }
