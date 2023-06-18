@@ -23,7 +23,7 @@ const tailPkgList = pkgList.map((path) => `packages/${path}/src/`);
 
 console.log(tailPkgList)
 
-console.log(alias,tailPkgList.map((dir) => ({type: 'component', dir})))
+console.log(alias, tailPkgList.map((dir) => ({type: 'component', dir})))
 
 export default defineConfig({
     alias,
@@ -31,4 +31,7 @@ export default defineConfig({
         docDirs: ['docs'],
         atomDirs: tailPkgList.map((dir) => ({type: 'component', dir})),
     },
+    hash: true,
+    base: "/selenium-design/",
+    publicPath: "/selenium-design"
 })
