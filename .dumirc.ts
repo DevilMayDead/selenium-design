@@ -33,5 +33,5 @@ export default defineConfig({
     },
     hash: true,
     base: "/selenium-design/",
-    publicPath: "/selenium-design"
+    publicPath: "/selenium-design/"
 })
