@@ -5,6 +5,6 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.version = void 0;
 var version = {
-  "@selenium-design/components": "0.0.1"
+  "@selenium-design/components": "0.0.8-beta"
 };
 exports.version = version;
