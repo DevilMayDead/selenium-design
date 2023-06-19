@@ -17,6 +17,7 @@
     "build-components": "pnpm --filter * build",
     "changelog": "node ./scripts/changelog.js",
     "dumi": "dumi build",
+    "prettier": "prettier --write \"**/**.{js,jsx,tsx,ts,less,md,yaml,json}\" --loglevel warn",
     "release": "node ./scripts/release.js",
     "start": "npm run version && dumi dev",
     "version": "node ./scripts/gen_version.js"
