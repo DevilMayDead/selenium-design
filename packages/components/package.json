@@ -1,6 +1,6 @@
 {
   "name": "@selenium-design/components",
-  "version": "0.0.8-beta",
+  "version": "0.0.8-beta.0",
   "description": "@selenium-design/components",
   "keywords": [
     "selenium",
@@ -32,8 +32,8 @@
     "ie >= 11"
   ],
   "peerDependencies": {
-    "react": ">=17.0.0",
-    "antd": ">=4.23.0 || >=5.0.0"
+    "antd": ">=4.23.0 || >=5.0.0",
+    "react": ">=17.0.0"
   },
   "publishConfig": {
     "access": "public"
