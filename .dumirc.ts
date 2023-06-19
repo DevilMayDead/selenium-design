@@ -32,6 +32,6 @@ export default defineConfig({
         atomDirs: tailPkgList.map((dir) => ({type: 'component', dir})),
     },
     hash: true,
-    base: "/selenium-design/",
-    publicPath: "/selenium-design/"
+    // base: "/selenium-design/",
+    // publicPath: "/selenium-design/"
 })
