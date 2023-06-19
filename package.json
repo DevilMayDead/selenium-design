@@ -15,7 +15,6 @@
     "bootstrap": "node ./scripts/bootstrap.js",
     "build": "npm run version && npm run build-components",
     "build-components": "pnpm --filter * build",
-    "changelog": "node ./scripts/changelog.js",
     "createRelease": "node ./scripts/createRelease.js",
     "dumi": "cross-env SITE_DEPLOY='TRUE' dumi build",
     "lint": "eslint --cache --ext .js,.jsx,.ts,.tsx  --fix --format=pretty ./ && npm run tsc && npm run lint:prettier",
