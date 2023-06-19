@@ -1,5 +1,5 @@
-import React from 'react';
+import { Button as AntdButton } from 'antd';
 
 export default function () {
-    return <button>123</button>
+  return <AntdButton>123</AntdButton>;
 }

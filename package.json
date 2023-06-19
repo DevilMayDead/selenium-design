@@ -16,7 +16,8 @@
     "changelog": "node ./scripts/changelog.js",
     "start": "npm run version && dumi dev",
     "version": "node ./scripts/gen_version.js",
-    "dumi": "dumi build"
+    "dumi": "dumi build",
+    "sort": "npx sort-package-json"
   },
   "resolutions": {
     "@types/react": "^18.0.38",
@@ -48,6 +49,8 @@
     "@umijs/test": "^3.5.41",
     "@umijs/test-utils": "^3.5.41",
     "@umijs/utils": "^4.0.70",
+    "antd": "^5.6.2",
+    "antd-style": "^3.3.0",
     "babel-loader": "^9.1.2",
     "babel-types": "^6.26.0",
     "chalk": "^4.1.2",
