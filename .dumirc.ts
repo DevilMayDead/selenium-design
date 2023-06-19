@@ -3,6 +3,10 @@ import { defineConfig } from 'dumi';
 import { readdirSync } from 'fs';
 import { join } from 'path';
 
+const { SITE_DEPLOY } = process.env;
+
+const pkgName = require(join(__dirname, './package.json')).name;
+
 const headPkgList: string[] = [];
 // utils must build before core
 // runtime must build before renderer-react
@@ -30,10 +34,9 @@ export default defineConfig({
     atomDirs: tailPkgList.map((dir) => ({ type: 'component', dir })),
   },
   hash: true,
-  // base: "/selenium-design/",
-  // publicPath: "/selenium-design/"
+  base: SITE_DEPLOY === 'TRUE' ? `/${pkgName}/` : undefined,
+  publicPath: SITE_DEPLOY === 'TRUE' ? `/${pkgName}/` : undefined,
   monorepoRedirect: { peerDeps: true },
-
   themeConfig: {
     name: 'selenium-design',
     siteToken: { demoInheritSiteTheme: true },
