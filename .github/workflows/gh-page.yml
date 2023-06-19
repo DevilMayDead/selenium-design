@@ -18,7 +18,7 @@ jobs:
         with:
           version: 8.6.1
       - run: pnpm install
-      - run: cross-env SITE_DEPLOY='TRUE' pnpm run dumi
+      - run: npx cross-env SITE_DEPLOY='TRUE' pnpm run dumi
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
