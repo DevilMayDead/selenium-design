@@ -1,3 +1,9 @@
+---
+title: Button - 按钮
+atomId: Button
+apiHeader:
+  pkg: "@selenium-design/components" 
+  defaultImport: true 
+---
+
 <code src="./demo/basic.tsx"></code>
-12345655123
-123123123
