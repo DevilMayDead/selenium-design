@@ -1,5 +1,5 @@
-import {Button} from '@selenium-design/components';
+import { Button } from '@selenium-design/components';
 
 export default function () {
-    return <Button/>
+  return <Button />;
 }

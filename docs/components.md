@@ -2,8 +2,8 @@
 title: 组件总览
 order: 0
 apiHeader:
-  pkg: "@selenium-design/components"
-  defaultImport: false 
+  pkg: '@selenium-design/components'
+  defaultImport: false
 ---
 
 # 架构设计
