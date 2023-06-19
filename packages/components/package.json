@@ -6,6 +6,11 @@
     "selenium",
     "selenium-design"
   ],
+  "homepage": "https://github.com/DevilMayDead/selenium-design/tree/feature/packages/components",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DevilMayDead/selenium-design"
+  },
   "license": "MIT",
   "sideEffects": false,
   "main": "lib/index.js",
