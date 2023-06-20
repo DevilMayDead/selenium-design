@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkselenium_design=self.webpackChunkselenium_design||[]).push([[219],{66131:function(i,t,n){n.r(t),n.d(t,{default:function(){return c}});var r=n(50959),u=n(11527);function s(){return(0,u.jsx)("button",{children:"123"})}var e=s;function c(){return(0,u.jsx)(e,{})}}}]);
