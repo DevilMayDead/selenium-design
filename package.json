@@ -21,7 +21,7 @@
     "lint:prettier": "npm run prettier &&  git diff && prettier --version && prettier --check \"packages/**/**.{js,jsx,tsx,ts,less,md,json}\" --end-of-line auto",
     "prettier": "prettier --write \"**/**.{js,jsx,tsx,ts,less,md,yaml,json}\" --loglevel warn",
     "publishOnly": "node ./scripts/release.js --publishOnly",
-    "release": "npm run test  -- -w=2 && node ./scripts/release.js",
+    "release": "node ./scripts/release.js",
     "start": "npm run version && dumi dev",
     "update:deps": "pnpm up --latest",
     "version": "node ./scripts/gen_version.js"
@@ -89,7 +89,10 @@
     "@octokit/rest": "^18.12.0",
     "execa": "^5.1.1",
     "inquirer": "^8.2.5",
-    "octokit": "^1.8.1"
+    "octokit": "^1.8.1",
+    "antd": "^5.6.2",
+    "antd-style": "^3.3.0",
+    "lerna": "^3.22.1"
   },
   "gitHooks": {
     "pre-commit": "pretty-quick --staged",

@@ -1,6 +1,6 @@
 {
   "name": "@selenium-design/components",
-  "version": "0.0.1-beta.1",
+  "version": "0.0.1-beta.2",
   "description": "@selenium-design/components",
   "keywords": [
     "selenium",
@@ -8,13 +8,14 @@
   ],
   "license": "MIT",
   "sideEffects": false,
-  "module": "es/index.js",
   "main": "lib/index.js",
+  "unpkg": "dist/components.min.js",
+  "module": "es/index.js",
   "types": "es/index.d.ts",
   "files": [
-    "es",
     "dist",
-    "lib"
+    "lib",
+    "es"
   ],
   "scripts": {
     "build": "father build"
@@ -26,8 +27,8 @@
     "ie >= 11"
   ],
   "peerDependencies": {
-    "react": ">=17.0.0",
-    "react-dom": ">=17.0.0"
+    "antd": ">=4.23.0 || >=5.0.0",
+    "react": ">=17.0.0"
   },
   "publishConfig": {
     "access": "public"
