@@ -84,6 +84,12 @@ importers:
       '@umijs/utils':
         specifier: ^4.0.70
         version: 4.0.70
+      antd:
+        specifier: ^5.6.2
+        version: 5.6.2(react-dom@18.2.0)(react@18.2.0)
+      antd-style:
+        specifier: ^3.3.0
+        version: 3.3.0(@types/react@18.0.38)(antd@5.6.2)(react-dom@18.2.0)(react@18.2.0)
       babel-loader:
         specifier: ^9.1.2
         version: 9.1.2(@babel/core@7.22.5)
@@ -5520,7 +5526,7 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /antd-style@3.3.0(@types/react@18.0.38)(antd@5.6.1)(react-dom@18.2.0)(react@18.2.0):
+  /antd-style@3.3.0(@types/react@18.0.38)(antd@5.6.2)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-GgZCcM1S1Z8tWzHra0up3mVSM8lOQ2MlG4CRMTG3zjZ2nDelvjiFzEP8RYyndPA0DrWGhJvCMCrVniCSSZb9cQ==}
     peerDependencies:
       antd: ^5
@@ -5534,7 +5540,7 @@ packages:
       '@emotion/serialize': 1.1.2
       '@emotion/server': 11.11.0(@emotion/css@11.11.2)
       '@emotion/utils': 1.2.1
-      antd: 5.6.1(react-dom@18.2.0)(react@18.2.0)
+      antd: 5.6.2(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
       use-merge-value: 1.2.0(react@18.2.0)
     transitivePeerDependencies:
@@ -5542,8 +5548,8 @@ packages:
       - react-dom
     dev: true
 
-  /antd@5.6.1(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-ZuY6MATmONRCrHL53BwM3t/GruwhNcPJsKtRQLyo6TWJFkdPBd4gASfHsgKWRlXnN767IG8ioxDS5hlV6GsGHg==}
+  /antd@5.6.2(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-h67gKgJRs07Qrf27AiKcJSEI3nCAmaCxxvEz6DSdRl1mHc03O8zAemRA6jPQQMPS5q4k7FxIphN+2ZnzdXlU2Q==}
     peerDependencies:
       react: '>=16.9.0'
       react-dom: '>=16.9.0'
@@ -5563,7 +5569,7 @@ packages:
       dayjs: 1.11.8
       qrcode.react: 3.1.0(react@18.2.0)
       rc-cascader: 3.12.0(react-dom@18.2.0)(react@18.2.0)
-      rc-checkbox: 3.0.1(react-dom@18.2.0)(react@18.2.0)
+      rc-checkbox: 3.1.0(react-dom@18.2.0)(react@18.2.0)
       rc-collapse: 3.7.0(react-dom@18.2.0)(react@18.2.0)
       rc-dialog: 9.1.0(react-dom@18.2.0)(react@18.2.0)
       rc-drawer: 6.2.0(react-dom@18.2.0)(react@18.2.0)
@@ -7824,8 +7830,8 @@ packages:
       '@babel/runtime': 7.22.5
       '@floating-ui/react': 0.24.3(react-dom@18.2.0)(react@18.2.0)
       ahooks: 3.7.7(react@18.2.0)
-      antd: 5.6.1(react-dom@18.2.0)(react@18.2.0)
-      antd-style: 3.3.0(@types/react@18.0.38)(antd@5.6.1)(react-dom@18.2.0)(react@18.2.0)
+      antd: 5.6.2(react-dom@18.2.0)(react@18.2.0)
+      antd-style: 3.3.0(@types/react@18.0.38)(antd@5.6.2)(react-dom@18.2.0)(react@18.2.0)
       chalk: 4.1.2
       chroma-js: 2.4.2
       copy-to-clipboard: 3.3.3
@@ -15305,8 +15311,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: true
 
-  /rc-checkbox@3.0.1(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-k7nxDWxYF+jDI0ZcCvuvj71xONmWRVe5+1MKcERRR9MRyP3tZ69b+yUCSXXh+sik4/Hc9P5wHr2nnUoGS2zBjA==}
+  /rc-checkbox@3.1.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-PAwpJFnBa3Ei+5pyqMMXdcKYKNBMS+TvSDiLdDnARnMJHC8ESxwPfm4Ao1gJiKtWLdmGfigascnCpwrHFgoOBQ==}
     peerDependencies:
       react: '>=16.9.0'
       react-dom: '>=16.9.0'
