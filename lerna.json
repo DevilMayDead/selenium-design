@@ -3,7 +3,7 @@
   "npmClient": "pnpm",
   "useWorkspaces": true,
   "changelog": {
-    "repo": "ant-design/pro-components",
+    "repo": "selenium-design",
     "cacheDir": ".changelog"
   },
   "ignoreChanges": [
@@ -17,5 +17,7 @@
     "**/es/**",
     "**/test/**"
   ],
-  "packages": ["packages/*"]
+  "packages": [
+    "packages/*"
+  ]
 }

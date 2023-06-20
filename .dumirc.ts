@@ -27,11 +27,6 @@ const tailPkgList = pkgList.map((path) => `packages/${path}/src/`);
 
 console.log(tailPkgList);
 
-console.log(
-  alias,
-  tailPkgList.map((dir) => ({ type: 'component', dir })),
-);
-
 export default defineConfig({
   alias,
   resolve: {
@@ -44,6 +39,16 @@ export default defineConfig({
   monorepoRedirect: { peerDeps: true },
   themeConfig: {
     name: 'selenium-design',
+    hero: {
+      title: 'ProComponents',
+      description: '🏆 让中后台开发更简单',
+      actions: [
+        {
+          text: '🏮🏮 快速开始 →',
+          link: '/',
+        },
+      ],
+    },
     siteToken: { demoInheritSiteTheme: true },
     socialLinks: {
       github: 'https://github.com/DevilMayDead/selenium-design',
@@ -51,28 +56,9 @@ export default defineConfig({
     nav: {
       'zh-CN': [{ title: '组件', link: '/components' }],
     },
-    sidebar: {
-      '/components': [
-        {
-          title: '架构设计',
-          children: [
-            {
-              title: 'Components - 组件设计',
-              link: '/components',
-            },
-          ],
-        },
-        {
-          title: '通用',
-          children: [
-            {
-              title: 'Button - 按钮',
-              link: '/components/button',
-            },
-          ],
-        },
-      ],
+    sidebar: {},
+    footerConfig: {
+      columns: false,
     },
-    footer: '123',
   },
 });
