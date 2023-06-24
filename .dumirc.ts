@@ -1,7 +1,4 @@
-import chalk from 'chalk';
-import { defineConfig } from 'dumi';
-import { readdirSync } from 'fs';
-import { join } from 'path';
+
 
 const { SITE_DEPLOY } = process.env;
 
@@ -56,9 +53,24 @@ export default defineConfig({
     nav: {
       'zh-CN': [{ title: '组件', link: '/components' }],
     },
-    sidebar: {},
+    sidebar: {
+      '/components': [
+        {
+          title: '通用',
+          children: [
+            {
+              title: 'Button - 按钮',
+              link: '/components/button',
+            },
+          ],
+        },
+      ],
+    },
     footerConfig: {
       columns: false,
     },
+  },
+  theme: {
+    colorPrimary: 'red',
   },
 });

@@ -1,0 +1,59 @@
+@import "./token.less";
+
+@btn-prefix-cls: ~'@{prefix}-btn';
+
+.btn-type(@type) {
+  .@{btn-prefix-cls}-@{type} {
+    border: @border-width-base @border-style-base ~'@{btn-@{type}-border-color}';
+    background-color: ~'@{btn-@{type}-background-color}';
+    color: ~'@{btn-@{type}-color}';
+
+    &:not(:disabled) {
+      &:hover, &:active {
+        border-color: ~'@{btn-@{type}-hover-border-color}';
+        background-color: ~'@{btn-@{type}-hover-background-color}';
+        color: ~'@{btn-@{type}-hover-color}';
+
+        & when (@type=link) {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.btn-size(@size) {
+  .@{btn-prefix-cls}-@{size} {
+    padding: 0 ~'@{btn-@{size}-padding-horizontal}';
+    height: ~'@{btn-@{size}-height}';
+  }
+}
+
+.@{btn-prefix-cls} {
+  display: inline-block;
+  position: relative;
+  padding: 0 ~'@{btn-padding-horizontal}';
+  height: ~'@{btn-height}';
+  font-size: ~'@{btn-font-size}';
+  outline: none;
+  white-space: nowrap;
+  text-align: center;
+  background-image: none;
+  background-color: transparent;
+  border-radius: @border-radius-base;
+  cursor: pointer;
+  user-select: none;
+  touch-action: manipulation;
+  transition: all .2s @ease-in-out;
+}
+
+.btn-type(default);
+.btn-type(primary);
+.btn-type(secondary);
+.btn-type(tertiary);
+.btn-type(text);
+.btn-type(link);
+
+.btn-size(mini);
+.btn-size(small);
+.btn-size(large);

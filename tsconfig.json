@@ -15,7 +15,7 @@
     "resolveJsonModule": true,
     "paths": {
       "@@/*": [".dumi/tmp/*"],
-      "@selenium-design/components": ["./packages/components/src/index.tsx"]
+      "@selenium-design/components": ["./packages/components/src/index.ts"]
     }
   },
   "include": [
